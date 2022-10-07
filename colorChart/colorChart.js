@@ -14,7 +14,7 @@ let textX = 5;
 let numX = 40;
 for(let i = 0; i < fruit.length; i++){
   ctx.fillStyle= fruit[i].color;
-  ctx.fillRect(x, 500, 100, -(fruit[i].quantity)*25);  
+  ctx.fillRect(x, 500, 100, -(fruit[i].quantity)*20);  
   x += 200; 
   ctx.fillStyle="black";
   ctx.font="20px Courier New blond"; 
