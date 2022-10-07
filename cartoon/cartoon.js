@@ -3,7 +3,7 @@ let ctx = canvas.getContext("2d");
 
 
 // Background color
-ctx.fillStyle = "#0d0d0d";
+ctx.fillStyle = "#5b5d61";
 ctx.fillRect(0, 0, canvas.width, canvas.height);
 
 
