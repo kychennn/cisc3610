@@ -12,13 +12,51 @@
       <h1>Text Form Project</h1>
     </div>
 
-    <div>
-      <canvas id="myCanvas" width="1000" height="800" ></canvas>
-    </div>
+    <form id = "textForm">
+      <!-- Their name using a text field   -->
+      <div>
+        <label>Please input your name:</label>
+        <input id = "name" type="text"><br><br>
+      </div>
+
+      <!-- Have them select a color, from the color picker, to use for their background color -->
+      <div>
+        <label>Select a color for your background color:</label>
+        <input id = "backgroundColor" type = "color" name = "backgroundColor" value="#FFFFFF" onchange = "changeBackgroundColor()"><br><br>
+      </div>
+
+      <!-- Have them select a color, from the color picker, to use for their text color  -->
+      <div>
+        <label>Select a color for your text color:</label>
+        <input id = "textColor" type = "color" name = "textColor" onchange = "changeTextColor()"><br><br>
+      </div>
+
+      <!-- Use a slider to set the size of the text (from 12 to 48 px)    -->
+      <div>
+        <label>Select size for your text:</label>
+        <input id = "textSize" type = "range" name = "textSize" min = "12" max = "48" value = "12" onchange = "changeSize()"><br><br>
+      </div>
+
+      <!-- Have 3 radio button choices, for the fonts to allow for different fonts to display the text  -->
+      <div>
+        <label>Select font for your text:</label><br>
+          <input type="radio" id="Times New Roman" name="font" value="Times New Roman" onclick = "changeFont(this)">
+          <label>Times New Roman</label><br>
+          <input type="radio" id="Comic Sans MS" name="font" value="Comic Sans MS" onclick = "changeFont(this)" >
+          <label>Comic Sans MS</label><br>
+          <input type="radio" id="Cursive" name="font" value="Cursive" onclick = "changeFont(this)">
+          <label>Cursive</label><br><br>
+      </div>
+
+      <!-- Have a reset button to reset the page to their default values -->
+      <div>
+        <button type="button" value="clear" id="button" onclick = "clear()">Clear</button>	
+      </div>
+    </form>
 
     <!-- a link return to the main page -->
     <div style="font-size: 2em;">
-      <br>
+      <br><br><br>
       <a style="color: black;" href="../index.html">Home Page</a>
     </div>
 
