@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Recognition</title>
+</head>
+<body>
+    
+    <!-- Voice Recognition page title -->
+    <div>
+        <h1>Voice Recognition Project</h1>
+    </div>
+  
+    <div>
+        <canvas id="myCanvas" width="600" height="600" ></canvas>
+    </div>
+
+    <!-- screen instructions -->
+    <div>
+        <b>Instructions</b>
+        <ul>
+            <li>Please click the "Speak" button to start.</li>
+            <li>Say "color _____" to change the color of the circle. For example "color blue" to make the circle blue.</li>
+            <li>Say "size _____" to change the size of the circle. For example "size 50" to make the circle with a diameter of 50.</li>
+            <li>Say "Help" to get details.</li>
+        </ul>
+    </div>
+
+    <!-- Have a button with that with the value of "Speak". When the user clicks on that button the value changes to "Stop" -->
+    <div>
+        <button id="speakButton" onclick="speakButton()">Speak</button><br></br>
+    </div>
+  
+    <!-- a link return to the main page -->
+    <div style="font-size: 2em;">
+        <br>
+        <a style="color: black;" href="../index.html">Home Page</a>
+    </div>
+  
+    <!-- an external JS file for the JavaScript code -->
+    <script src="voiceRecognition.js" charset="utf-8"></script>
+  
+    
+</body>
+</html>
